@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colores principales */
+  --color-primary: #4CAF50;         /* Verde principal */
+  --color-primary-dark: #388E3C;    /* Verde oscuro para hover */
+  --color-primary-light: #81C784;   /* Verde claro para elementos secundarios */
+  
+  /* Colores de fondo */
+  --color-background: #121212;      /* Fondo principal oscuro */
+  --color-surface: #1E1E1E;         /* Superficie de tarjetas y elementos */
+  --color-surface-light: #2D2D2D;   /* Superficie más clara para hover */
+  
+  /* Colores de texto */
+  --color-text-primary: #FFFFFF;    /* Texto principal blanco */
+  --color-text-secondary: #E0E0E0;  /* Texto secundario gris claro */
+  --color-text-muted: #A0A0A0;      /* Texto terciario gris medio */
+  
+  /* Colores de acento */
+  --color-accent: #2E7D32;          /* Verde oscuro para acentos */
+  --color-accent-light: #43A047;    /* Verde más claro para hover */
+  --color-accent-contrast: #FFFFFF; /* Texto sobre acentos */
+  
+  /* Colores de estado */
+  --color-success: #43A047;         /* Verde para éxito */
+  --color-error: #D32F2F;           /* Rojo para errores */
+  --color-warning: #FFA000;         /* Amarillo para advertencias */
+}
+
+/* Estilos base */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+}
+
+/* Tipografía */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Enlaces */
+a {
+  color: var(--color-primary-light);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+/* Botones */
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Tarjetas */
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-surface-light);
+}
+
+.card:hover {
+  background-color: var(--color-surface-light);
+}
+
